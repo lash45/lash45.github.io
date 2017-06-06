@@ -1,0 +1,39 @@
+
+/*@font-face{
+	font-family: 'Roboto';
+	src:url('fonts/roboto-100.eot') format('embedded-opentype'),
+		url('fonts/roboto-100.ttf') format('truetype'),
+		url('fonts/roboto-100.woff2') format('woff2'),
+		url('fonts/roboto-100.woff') format('woff');
+}*/
+.container {
+	
+	padding:20px;
+	margin:0;
+	font-family: 'Roboto';
+	font-weight: 100;
+	background-color: #FAFAFA;
+	font-size: 20px;
+	margin: 60px auto;
+
+}
+
+nav {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.navbar-nav {
+ margin-left: 500px;
+}
+
+.nav-item {
+	padding: 0px 40px;
+}
+
+.about{
+	padding: 30px 0px;
+}
+
+
+
