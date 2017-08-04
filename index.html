@@ -10,10 +10,13 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
- <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel = "stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link href="css/dist/hamburgers.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  
 
      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,184 +26,290 @@
     <![endif]-->
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 
 
-<div class="container">
-  
-  <nav class="navbar navbar-light navbar-toggleable-md ">
-  <button class="navbar navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
-    <span class="navbar-toggler-icon"></span>
+
+  <!--Navigatiion Section-->
+<nav class="navbar navbar-toggleable-md navbar-light custom-navbar fixed-top" >
+    <!--Navbar Header -->
+      <div class="navbar-header">
+        <button type="button" class="navbar navbar-toggler custom-toggler navbar-toggler-right hamburger hamburger--elastic" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls = "navbarSupportedContent" aria-expanded="false" aria-label = "Toggle navigation">
+
+       <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
  
-    </button>  
-    <a class="navbar-brand" href="#">Tomi Olasimoju</a>
-    
-<div class="collapse navbar-collapse navbar-right" id = "navbarSupportedContent" >
-  <ul class="navbar navbar-nav  mr-auto">
-    <li class="nav-item active"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-    <li class="nav-item active"><a class="nav-link" href="#aboutme">About</a></li>
-    <li class="nav-item active"><a class="nav-link" href="#contact">Contact</a></li>
-  </ul>
+        </button>
+
+        <!--LOGO -->
+
+        <a href="#" class="navbar-brand"> Tomi  Olasimoju</a>
+        
+      </div>
+
+  <!--Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="#home" class="nav-link smoothScroll">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link smoothScroll">About</a></li>
+        <li class="nav-item"><a href="#works" class="nav-link smoothScroll">Works</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link smoothScroll">Contact</a></li>
+      </ul>
     
     </div>
+
 </nav>
-  
-  <div class="row about">
-    <div class="col-md-8 text-center ">
-      <p class="aboutme" id ="aboutme" style="font-family: 'Roboto', sans-serif;">Fledgling Front-End Developer and UX/UI designer, Android developer, IT Systems Administrator, Network Engineer, Graphics Designer, Photographer; Just a creative guy with a love for computers</p>
-    </div>  
-    
-    <div class="col-md-4 text-center"><img class="img-fluid rounded-circle" width ="200" height="300" src="https://s-media-cache-ak0.pinimg.com/originals/31/3d/fd/313dfdbd85e2b4115ed7ecbfc311c9fc.jpg"  ></div>
 
-  
-  </div>
-  
-  
-  <div class="row" id="portfolio">
-    <div class="col-md-12">
-      <div class="text-center">
-  <h1>PORTFOLIO</h1>
-    </div>           
-   </div>
-  </div>
-  
-  
-  <div class="row"><div class="col-md-12"><hr></div> </div>
-  
-  <div class="row portfolioProjects">
-    <div class="col-md-6">
-    <div class="img-thumbnail text-center">
-        <a href="#"><img class="img-fluid" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-15.jpg">
-      <div class="caption">www.puppyspace.com</div></a>
-    </div>
-    </div>
-    
-    
-    
-        <div class="col-md-6 ">
-    <div class="img-thumbnail text-center">
-        <a href="#"><img class="img-fluid" src="http://paristech.com/wp-content/uploads/2014/04/paris-event-location.jpg">
-      <div class="caption">www.officespace.com</div></a>
-    </div>
-    </div>
-    
-    </div>
-  
-  
-  
-  <div class="row portfolioProjects">
-    <div class="col-md-6 ">
-    <div class="img-thumbnail text-center">
-        <a href="#"><img class="img-fluid" src="http://umad.com/img/2015/11/chocolate-cupcakes-wallpaper-4136-4354-hd-wallpapers.jpg">
-      <div class="caption">www.muffinsroyale.com</div></a>
-    </div>
-    </div>
-    
-    
-    
-        <div class="col-md-6 ">
-    <div class="img-thumbnail text-center">
-        <a href="#"><img class="img-fluid" src="https://www.telegraph.co.uk/content/dam/motoring2/2015/12/03/mercedes-s-class-coupe-main-xlarge_trans_NvBQzQNjv4BqrWYeUU_H0zBKyvljOo6zlkYMapKPjdhyLnv9ax6_too.jpg">
-      <div class="caption">www.prestigerentals.com</div></a>
-    </div>
-    </div>
-    
-    </div>
-  
-  
 
-  
-  <div class="row portfolioProjects">
-    <div class="col-md-6 ">
-    <div class="img-thumbnail text-center">
-        <a href="#"><img class="img-fluid" src="http://rufutech.com/wp-content/uploads/2015/12/Offshore-team.jpg">
-      <div class="caption">www.thenook.com</div></a>
-    </div>
-    </div>
-    
-    
-    
-        <div class="col-md-6">
-    <div class="img-thumbnail text-center">
-        <a href="#"><img class= "img-fluid" src="https://static.pexels.com/photos/226243/pexels-photo-226243.jpeg">
-      <div class="caption">www.unseenstudios.com</div></a>
-    </div>
-    </div>
-    
-    </div>
-  
-  
-  <div class="row">
-    <div class="col-md-12"><hr style="width : 100%; margin-top: 50px;"></div>
-  </div>
-  
-    <div class="row">
-    <div class="col-md-12 text-center" id ="contact"><h2>Contact Me</h2></div>
-  </div>
-  
-  <div class="row">
-  <div class="col-md-6 ">
-    <form> 
-      <div class="form-vertical form-group" role="form">
-    <input type= "text" class= " form-control no-border" placeholder ="Name" id="name" areadescribedby="name">
-  </div>      
-    <div class="form-vertical form-group" role="form">
-          <input type= "email" class= " form-control no-border" placeholder ="Email Address" id="email" areadescribedby="email">
+<!--Home Section -->
+
+<section id="home" class="parallax-section">
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <div class="title">
+            <span class="effect"></span>
+            <!-- <h1 class="wow fadeIn" data-wow-delay="1s">And, I am on a mission to change the world</h1> -->
+          </div>         
+        </div>  
       </div>
-      
-      <div class="form-vertical form-group" role="form">
-          <input type= "tel" class= " form-control no-border" placeholder ="Phone Number">
-</div>
-      <div class="form-group">
-      <textarea class="form-control" id="text area no-border" rows="5" placeholder="Message"></textarea>
-      </div>
-      
-    <!--  <div class="form-group"><input class="form-control" type="submit"></div> -->
-      <button type="submit" class="btn btn-defaul btn-success">Send</button>
-        </form>
-    </div> 
-    
-    <div class="col-md-6 contact" style="margin-top: 50px;">
-    <p style="font-size: 25px;">You're free to ask me anything (reasonable). From a good stimulating conversation to brainstorming on innovatives idea. Available for a challenge on FIFA anytime. Available for side jobs as well</p>
-    </div> 
- </div>
+    </div>      
   
+</section>
 
- <footer role="footer">   
-<div class="row">
-  <div class="col-md-12">
-  <div class="text-center">
 
-    <!-- just add href= for your links, like this: -->
-    <a href="https://medium.com/@lash45" class="btn btn-social-icon btn-medium" target="blank_"><i class="fa fa-medium"></i></a>    
-    <a href="https://github.com/lash45" class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></a>
-    <a href="https://plus.google.com/u/0/" class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
-    <a href="https://www.linkedin.com/in/tomisin-olasimoju-11a59582/" class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
-    <a href="https://twitter.com/TomiOlasimoju" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-    <a href="https://www.freecodecamp.com/lash45" class="btn btn-social-icon btn-free-code-camp"><i class="fa fa-free-code-camp"></i></a>
-  </div>
-  
-  </div>
-  
-  </div>
-   
-   <class="row" id="copy"><class="col-md-12 ">
-     <p class="text-center"><small>Copyright 2017. unseenDevs.All rights reserved</small></p>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 text-center">
+           <h2> Who i am</h2>
+        </div>
+
+        <div class="col-md-6 col-sm-6 text wow fadeIn" data-wow-delay="0.4s">
+          <div class="">
+            <p>
+            Front-End Developer, UX/UI designer, Android Newbie, Graphics Designer, Photographer; Just a creative guy with a love for computers...<br>
+            <br>
+            Previously, I spent quite some time efficiently managing IT related resources as a  Systems and Network Administrator for previous firms I have worked with, picking up several industry certifications along the way.<br>
+            
+            <br>
+            Now, I specialize in delivering incredibly distinctive brand identities through eccentric logo designs, graphics design,  UX/UI Designs, Front-End development and mobile responsive web development.<br>
+            <br>
+            When I am not designing or writing code, I'll most likely be capturing timeless moments with my camera.<br>
+
+          </p>
+          </div>
+        </div>
+
+
+
+        
+        <div class="col-md-6 col-md-offset-1 col-sm-6 ">
+        <div class="">
      
-     </div></div>
+        <img src="images/me.jpg" class="img-fluid">
+     
+        </div>
    
-   
- </footer>
-
+      </div>
+      </div>
     </div>
+  </section>
+
+
+
+
+<section id="works">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 colsm-12 text-center"> <h2>what i do</h2></div>
+
+    <div class="col-md-3 text-center wow fadeInUp" data-wow-delay="0.2s">
+      <div><i class="fa fa-4x fa-desktop" aria-hidden="true"></i></div><br>
+
+      <h6>Web Development</h6>
+      <p> I make use of the most recent <br> web technologies to create <br>resonsive websites <br>and applications</p>
+    </div>
+     <div class="col-md-3 text-center wow fadeInUp" data-wow-delay="0.4s">
+      <div ><i class="fa fa-4x fa-mobile" aria-hidden="true"></i></div><br>
+
+      <h6>Mobile Development</h6>
+      <p> I make use of the most recent <br> web technologies to create <br>resonsive web designs</p>
+
+     </div>
+      <div class="col-md-3 text-center wow fadeInUp" data-wow-delay="0.6s">
+
+    <div><i class="fa fa-4x fa-paint-brush" aria-hidden="true"></i></div><br>
+      <h6>UI Designs</h6>
+      <p> I create stunning UI <br>Designs and mockups</p>
+      </div>
+
+      <div class="col-md-3 text-center  wow fadeInUp" data-wow-delay="0.8s">
+      <div><i class="fa fa-4x fa-camera" aria-hidden="true"></i></div><br>
+      <h6>Photography</h6>
+      <p> I am also the lead photographer <br>at unseen studios</p>
+      </div>
+
+  </div>
+
+  <!-- <div class="row">
+    <div class="col-md-3">
+      <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+      <div class="col-md-3">
+      <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+      <div class="col-md-3">
+      <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+      <div class="col-md-3">
+      <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>  
+</div> -->
+  
+
+
+
+</section>
+
+
+
+
+
+  
+  <script >
+    
+// Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+
+  </script>
+
+
+
+<script type="text/javascript">
+  // $(function (){
+
+
+// $(".effect").typed({
+//   strings: ["My name is Tomi", "And I am a front end developer"],
+//  typespeed: 0,
+//  loop:true,
+//  backSpeed: 30,
+//  showCursor: true,
+//  backDelay: 500,
+//  startDelay: 1000,
+//  contentType: 'text',
+//          backspace: function(curString, curStrPos) {
+
+
+//                     setTimeout(function () {
+
+//                                 // check string array position
+//                                 // on the first string, only delete one word
+//                                 // the stopNum actually represents the amount of chars to
+//                                 // keep in the current string. In my case it's 3.
+//                                 if (curString.arrayPos == 20) {
+//                                     curString.stopNum = 14;
+//                                 }
+//                                 //every other time, delete the whole typed string
+//                                 else {
+//                                     self.stopNum = 14;
+
+//                                 }
+//                             }
+//                     )
+//                 }
+// });
+
+
+
+
+
+  // });
+
+</script>
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script src="js/jquery.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Particles Js Library-->
+   <!-- <script src="js/particles.min.js"></script> -->
+   <script src="js/particles.min.js"></script> 
+   <script src="js/app.js"></script>
+   <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script type="text/javascript">
+       $(function(){
+      var options = {
+        strings: [
+        "Hi there",
+        "My name is Tomi",
+        "And I'm a software developer ... " , "Or maybe I like to think that I am...", "Scroll down and get to know more about me..."],
+        typeSpeed: 10,
+ loop: false,
+ backSpeed: 5,
+ showCursor: true,
+ cursorChar: '|',
+ backDelay: 3000,
+ startDelay: 1000,
+ contentType: 'text',
+ loop:false,
 
 
+
+    }
+
+       var typed = new Typed(".effect", options);
+    })
+    </script>
+
+   
+   
 
 </body>
 </html>
